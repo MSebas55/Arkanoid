@@ -48,7 +48,7 @@ public class Player : MonoBehaviour
             direction = Vector2.zero;
         }
         rigidBody2D.AddForce(direction * moveSpeed * Time.deltaTime * 100);
-        #elif UNITY_ANDROID
+#elif UNITY_ANDROID
         foreach (Touch toque in Input.touches)
 {
     if (toque.phase == UnityEngine.TouchPhase.Began)
@@ -70,8 +70,8 @@ public class Player : MonoBehaviour
             // Mover hacia la derecha
             _rb.AddForce(Vector2.right * _velocity, ForceMode2D.Impulse);
         }
-    }
-        #endif
+    }}
+#endif
     }
     public void ResetPlayer()
     {
