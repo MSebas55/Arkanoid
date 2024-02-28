@@ -1,0 +1,5 @@
+C:/Users/Alumno/Documents/GitHub/Arkanoid/Arkanoid/.utmp/RelWithDebInfo/22512a32/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/Alumno/Documents/GitHub/Arkanoid/Arkanoid/.utmp/RelWithDebInfo/22512a32/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+C:/Users/Alumno/Documents/GitHub/Arkanoid/Arkanoid/.utmp/RelWithDebInfo/22512a32/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Users/Alumno/Documents/GitHub/Arkanoid/Arkanoid/.utmp/RelWithDebInfo/22512a32/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Users/Alumno/Documents/GitHub/Arkanoid/Arkanoid/.utmp/RelWithDebInfo/22512a32/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir

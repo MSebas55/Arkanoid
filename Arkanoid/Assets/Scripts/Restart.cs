@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
-    public void OnRestartButtonClick()
+    public static GameObject canvas;
+    public void changeScene()
     {
         // Recargar la escena "Juego"
         SceneManager.LoadScene("Juego");

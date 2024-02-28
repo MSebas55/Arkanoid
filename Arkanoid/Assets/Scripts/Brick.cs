@@ -16,10 +16,11 @@ public class Brick : MonoBehaviour
         if (collision.gameObject.CompareTag("Ball"))
         {
             Destroy(gameObject);
+            GameManager.Instance.BrickBroke();
             crear = rand.Next(0, 2) == 0; // 50% de probabilidad de crear el powerup
             if (crear && powerupPrefabVerde != null && powerupPrefabRosa != null)
             {
-                crear = rand.Next(0, 2) == 0; // 50% de probabilidad de elegir powerup
+                crear = rand.Next(0, 10) == 0; // 10% de probabilidad de elegir powerup verde
                 if (crear)
                 {
                     // Instancia el powerup en la escena
