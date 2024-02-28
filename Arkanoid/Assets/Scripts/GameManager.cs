@@ -6,25 +6,31 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    public int lives = 3;
 
-    public void LoseHealth()
+    public void LoseHealth(GameObject ball)
     {
-        lives--;
+        ball.SetActive(false);
+        
 
-        if (lives <= 0 )
+        
+        findBall();
+        findBrick();
+    } 
+
+    public void findBall()
+    {
+        Ball ball = FindObjectOfType<Ball>();
+        if (ball == null)
         {
             SceneManager.LoadScene("GameOver");
-        } else
-        {
-            ResetLevel();
         }
     }
-
-    public void ResetLevel()
+    public void findBrick()
     {
-        FindObjectOfType<Ball>().ResetBall();
-        FindObjectOfType<Player>().ResetPlayer();
-
+        Brick brick = FindObjectOfType<Brick>();
+        if (brick == null)
+        {
+            SceneManager.LoadScene("Victory");
+        }
     }
 }

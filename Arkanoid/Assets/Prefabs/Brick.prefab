@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 6787720450357247624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.09, y: 2.57, z: 0}
-  m_LocalScale: {x: 2, y: 0.5, z: 1}
+  m_LocalScale: {x: 1, y: 0.25, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -143,3 +143,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64983acf967675843bf03899d70094db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerupPrefabVerde: {fileID: 8244702935067892287, guid: 0d082323332092046996749668e98662, type: 3}
+  powerupPrefabRosa: {fileID: 8244702935067892287, guid: 860e0548f4ad65549a346f5e3fd9ce55, type: 3}

@@ -5,29 +5,36 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     public Rigidbody2D rigidBody2D;
-    public float speed = 300;
+    public float speed;
     private Vector2 velocity;
     Vector2 startPosition;
 
+    void OnEnable()
+    {
+        ResetBall();
+
+    }
     void Start()
     {
-        velocity.x = Random.Range(-1f, 1f);
-
-        velocity.y = 1;
-
-        rigidBody2D.AddForce(velocity * speed);
+        startPosition = transform.position;
+        ResetBall();
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Deadzone"))
         {
-            FindObjectOfType<GameManager>().LoseHealth();
+            FindObjectOfType<GameManager>().LoseHealth(gameObject);
         }
     }
 
     public void ResetBall()
     {
-        startPosition = transform.position;
+        velocity.x = Random.Range(-1f, 1f);
+
+        velocity.y = 1;
+
+        rigidBody2D.AddForce(velocity * speed);
     }
 }
